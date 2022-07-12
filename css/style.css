@@ -56,11 +56,16 @@ img {
 
 #descrizione {
     position: absolute;
-    top: 50px;
-    right: 15px;
+    top: 20px;
+    left: 20px;
     color: white;
-
+    display: none;
 }
+
+#descrizione.active {
+    display: block;
+}
+
 .margine {
     margin-top: 50px;
 }

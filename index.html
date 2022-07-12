@@ -31,14 +31,22 @@
         <div id="carosel">
 
             <div id="prev">
-                <i v-show="!firstImage" class="bi bi-arrow-left-circle-fill btn border-0" @click="botPrev"></i>
+                <i v-show="!firstImage" class="bi bi-arrow-left-circle-fill btn border-0" 
+                @click="botPrev"></i>
             </div>
 
             <img v-for="(image, index) in images" :class="{'active' 
             : currentIndex === index}" :src="image.url" :alt="image.title">
 
+            <div v-for="(image, index) in images" :class="{'active' 
+            : currentIndex === index}" id="descrizione">
+            <h2 class="fw-bold">{{ image.title }}</h2>
+            <h5>{{ image.description }}</h5>
+            </div>
+
             <div id="next">
-                <i v-show="!lastImage" class="bi bi-arrow-right-circle-fill btn border-0" @click="botNext"></i>
+                <i v-if="!lastImage" class="bi bi-arrow-right-circle-fill btn border-0" 
+                @click="botNext"></i>
             </div>
         </div>
         <div class="row margine thumbnails justify-content-between">
