@@ -2,13 +2,13 @@
 // Partendo dal markup della versione svolta in js plain, rifare lo
 // slider ma questa volta usando Vue.
 // Le caratteristiche minime richieste sono:
-// Immagine grande visibile quando attiva
-// Lista di Thumbnails in basso
-// Anche nelle thumbnails dobbiamo avere una classe active corrispondente
+// 1. Immagine grande visibile quando attiva
+// 2. Lista di Thumbnails in basso
+// 3. Anche nelle thumbnails dobbiamo avere una classe active corrispondente
 // all'immagine attiva in quel momento (lo stile è a vostra discrezione)
-// Al click sulle freccette l'immagine principale deve cambiare (e la thumbnail 
+// 4. Al click sulle freccette l'immagine principale deve cambiare (e la thumbnail 
 // corrispondente deve avere la classe active con conseguente effetto visivo)
-// Implementare il ciclo infinito: se sono sulla prima immagine e clicco prev,
+// 5. Implementare il ciclo infinito: se sono sulla prima immagine e clicco prev,
 //  devo ricominciare dall'ultima. Se sono sull'ultima e clicco next, devo 
 // ripartire dalla prima.
 // Bonus:

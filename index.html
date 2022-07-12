@@ -42,6 +42,10 @@
             </div>
         </div>
         <div class="row margine thumbnails justify-content-between">
+            <div v-for="(image, index) in images" class="col-2" >
+                <img :class="{'active' : currentIndex === index}" 
+                :src="image.url" :alt="image.title">
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>

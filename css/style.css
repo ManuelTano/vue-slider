@@ -22,14 +22,14 @@ img {
 
 #carosel {
     position: relative;
-    max-height: 400px;
+    height: 600px;
 }
 
 
 #prev {
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 45%;
     left: -10%;
     cursor: pointer;
     
@@ -38,7 +38,7 @@ img {
 #next {
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 45%;
     right: -10%;
     cursor: pointer;
 }
@@ -62,10 +62,11 @@ img {
 
 }
 .margine {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .thumbnails img {
+    display: block;
     cursor: pointer;
     filter: grayscale(1);
 }
