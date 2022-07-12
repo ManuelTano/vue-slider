@@ -75,7 +75,8 @@ const root = new Vue({
       if (this.currentIndex < 0) this.currentIndex
       = this.images.length - 1;
     },
-  },
+    
+  }
 });
 
 
