@@ -31,14 +31,14 @@
         <div id="carosel">
 
             <div id="prev">
-                <i class="bi bi-arrow-left-circle-fill btn border-0"></i>
+                <i v-show="!firstImage" class="bi bi-arrow-left-circle-fill btn border-0" @click="botPrev"></i>
             </div>
 
             <img v-for="(image, index) in images" :class="{'active' 
             : currentIndex === index}" :src="image.url" :alt="image.title">
 
             <div id="next">
-                <i class="bi bi-arrow-right-circle-fill btn border-0"></i>
+                <i v-show="!lastImage" class="bi bi-arrow-right-circle-fill btn border-0" @click="botNext"></i>
             </div>
         </div>
         <div class="row margine thumbnails justify-content-between">

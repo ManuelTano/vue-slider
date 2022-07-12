@@ -62,10 +62,21 @@ const root = new Vue({
     ],
   },
   computed: {
-
+    firstImage() {
+      return this.currentIndex === 0
+    },
+    lastImage () {
+      return this.currentIndex === 
+      this.images.length - 1
+    },
   },
   methods: {
-
+    botNext() {
+      this.currentIndex++;
+    },
+    botPrev() {
+      this.currentIndex--;
+    },
   },
 });
 
