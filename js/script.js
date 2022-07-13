@@ -25,6 +25,7 @@ const root = new Vue({
   name: 'Vue Slider',
   el: '#root',
   data: {
+    autoplay: undefined,
     currentIndex: 0,
     images: [
       {
@@ -75,13 +76,16 @@ const root = new Vue({
       if (this.currentIndex < 0) this.currentIndex
       = this.images.length - 1;
     },
-    autoPlay() {
-      setInterval(this.botNext, 3000);
+    stopAutoPlay() {
+      clearInterval(this.autoplay);
     },
+    startAutoPlay() {
+      this.autoplay = setInterval(this.botNext, 3000);
+    }
   },
-  mounted() {
-  this.autoPlay();
-  }
+  created() {
+    this.startAutoPlay();
+  },
 });
 
 
